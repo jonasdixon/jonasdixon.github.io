@@ -1,32 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="night">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jonas Dixon — Baseball Analytics Portfolio (Night Game)</title>
+  <title>Jonas Dixon — Baseball Analytics Portfolio</title>
   <meta name="description" content="Baseball analytics projects by Jonas Dixon: Pitch Tunneling Analyzer, Shadow Zone Framing Model, and Sweeper Finder." />
-  <link rel="canonical" href="https://jonasdixon.github.io/night.html" />
-  <meta name="theme-color" content="#0d1b2a" />
+  <link rel="canonical" href="https://jonasdixon.github.io/" />
+  <meta name="theme-color" content="#2e7d32" />
 
-  <meta property="og:title" content="Jonas Dixon — Baseball Analytics Portfolio (Night Game)" />
+  <meta property="og:title" content="Jonas Dixon — Baseball Analytics Portfolio" />
   <meta property="og:description" content="Pitch tunneling, framing, and pitch-type discovery projects." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jonasdixon.github.io/night.html" />
+  <meta property="og:url" content="https://jonasdixon.github.io/" />
 
-  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230d1b2a"/><path d="M14 20c10 7 26 7 36 0" fill="none" stroke="%23fff" stroke-width="3" stroke-linecap="round"/><path d="M20 44c8 5 16 5 24 0" fill="none" stroke="%23fff" stroke-width="3" stroke-linecap="round"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="18" fill="%23fff">JD</text></svg>' />
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%232e7d32"/><path d="M14 20c10 7 26 7 36 0" fill="none" stroke="%23fff" stroke-width="3" stroke-linecap="round"/><path d="M20 44c8 5 16 5 24 0" fill="none" stroke="%23fff" stroke-width="3" stroke-linecap="round"/><text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="18" fill="%23fff">JD</text></svg>' />
 
   <style>
     :root {
-      --bg: #fef9ef; --bg-2: #fbf2dd; --ink: #152c1f; --muted: #3f5149;
-      --primary: #2e7d32; --primary-700: #1b5e20; --accent: #c2410c; --accent-2: #b42318;
-      --card: #fffaf0; --border: #e7dcc5; --shadow: 0 1px 2px rgba(24, 58, 36, 0.06), 0 10px 30px rgba(24, 58, 36, 0.08);
-      --ring: rgba(46, 125, 50, 0.25); --wall: #0f5132; --clay: #b8572a; --plate: #f7f7f7; --plate-stroke: #c7c7c7;
+      --bg: #fef9ef;
+      --bg-2: #fbf2dd;
+      --ink: #152c1f;
+      --muted: #3f5149;
+      --primary: #2e7d32;
+      --primary-700: #1b5e20;
+      --accent: #c2410c;
+      --accent-2: #b42318;
+      --card: #fffaf0;
+      --border: #e7dcc5;
+      --shadow: 0 1px 2px rgba(24, 58, 36, 0.06), 0 10px 30px rgba(24, 58, 36, 0.08);
+      --ring: rgba(46, 125, 50, 0.25);
+      --wall: #0f5132;
+      --clay: #b8572a;
+      --plate: #f7f7f7;
+      --plate-stroke: #c7c7c7;
     }
     [data-theme="night"] {
-      --bg: #0d1b2a; --bg-2: #0b1620; --ink: #e6edf3; --muted: #c9d6e1;
-      --primary: #52b788; --primary-700: #3aa979; --accent: #ffb703; --accent-2: #ff7b7b;
-      --card: #152238; --border: #1e2c3e; --shadow: 0 1px 2px rgba(0,0,0,0.2), 0 12px 36px rgba(0,0,0,0.35);
-      --ring: rgba(82, 183, 136, 0.35); --wall: #082a1d; --clay: #8d421c; --plate: #e7e7e7; --plate-stroke: #9c9c9c;
+      --bg: #0d1b2a;
+      --bg-2: #0b1620;
+      --ink: #e6edf3;
+      --muted: #c9d6e1;
+      --primary: #52b788;
+      --primary-700: #3aa979;
+      --accent: #ffb703;
+      --accent-2: #ff7b7b;
+      --card: #152238;
+      --border: #1e2c3e;
+      --shadow: 0 1px 2px rgba(0,0,0,0.2), 0 12px 36px rgba(0,0,0,0.35);
+      --ring: rgba(82, 183, 136, 0.35);
+      --wall: #082a1d;
+      --clay: #8d421c;
+      --plate: #e7e7e7;
+      --plate-stroke: #9c9c9c;
     }
 
     * { box-sizing: border-box; }
@@ -36,8 +60,8 @@
       font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color: var(--ink);
       background:
-        radial-gradient(900px 500px at 100% 0%, rgba(255, 183, 3, 0.12), transparent 60%),
-        radial-gradient(1100px 600px at 0% 100%, rgba(82, 183, 136, 0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(194, 65, 12, 0.08), transparent 60%),
+        radial-gradient(1100px 600px at 0% 100%, rgba(46, 125, 50, 0.09), transparent 55%),
         var(--bg);
       -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
     }
@@ -49,72 +73,83 @@
 
     header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0 18px; }
     .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 800; font-size: clamp(18px, 2.5vw, 22px); color: var(--ink); text-decoration: none; }
-    .scoreboard { width: 42px; height: 30px; border-radius: 6px; display: grid; place-items: center; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-700) 100%); color: #fff; box-shadow: var(--shadow); position: relative; overflow: hidden; font-weight: 900; font-size: 12px; }
+    .scoreboard {
+      width: 42px; height: 30px; border-radius: 6px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-700) 100%);
+      color: #fff; box-shadow: var(--shadow); position: relative; overflow: hidden; font-weight: 900; font-size: 12px;
+    }
     .scoreboard::before, .scoreboard::after { content: ""; position: absolute; width: 80%; height: 2px; left: 10%; background: #fff; opacity: 0.25; border-radius: 2px; }
     .scoreboard::before { top: 7px; } .scoreboard::after { bottom: 7px; }
 
     nav { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-    .nav-link { color: var(--muted); font-weight: 700; } .nav-link:hover { color: var(--ink); text-decoration: none; }
-    .toggle { display: inline-flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 12px; border: 1px solid var(--border); background: var(--card); color: var(--ink); cursor: pointer; }
+    .nav-link { color: var(--muted); font-weight: 700; }
+    .nav-link:hover { color: var(--ink); text-decoration: none; }
+    .toggle {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 12px;
+      border: 1px solid var(--border); background: var(--card); color: var(--ink); cursor: pointer;
+    }
     .toggle:focus { outline: 3px solid var(--ring); outline-offset: 2px; }
 
     .hero {
       position: relative;
       display: grid; grid-template-columns: 1fr; gap: 18px;
       padding: 22px; border-radius: 18px;
-      background: linear-gradient(180deg, rgba(82,183,136,0.10), rgba(82,183,136,0.06)), var(--card);
+      background: linear-gradient(180deg, rgba(46,125,50,0.08), rgba(46,125,50,0.04)), var(--card);
       border: 1px solid var(--border); box-shadow: var(--shadow);
-      overflow: hidden; isolation: isolate; padding-bottom: 140px;
+      overflow: hidden;
+      isolation: isolate;
+      padding-bottom: 140px;
     }
     .hero .content { position: relative; z-index: 1; }
     .hero h1 { font-size: clamp(28px, 4.6vw, 44px); line-height: 1.1; margin: 0 0 6px; color: var(--ink); }
     .muted { color: var(--muted); }
     .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: #fff; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-700) 100%); padding: 10px 14px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.2); box-shadow: var(--shadow); text-decoration: none; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; font-weight: 800;
+      color: #fff; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-700) 100%);
+      padding: 10px 14px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05); box-shadow: var(--shadow); text-decoration: none;
+    }
     .btn:hover { filter: brightness(0.97); text-decoration: none; }
-    .btn.secondary { background: linear-gradient(135deg, var(--accent), #ff9800); color: #0b1620; border: 1px solid rgba(0,0,0,0.25); }
+    .btn.secondary { background: linear-gradient(135deg, #d96a30, #c2410c); color: #ffffff; border: 1px solid rgba(0,0,0,0.06); }
 
     .stadium, .ball, .home-plate { position: absolute; pointer-events: none; z-index: 0; }
     .stadium { inset: 0; }
-    .ball { right: -24px; top: -24px; width: 120px; height: 120px; opacity: 0.12; transform: rotate(-12deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); }
-    .home-plate { left: 50%; transform: translateX(-50%); bottom: 12px; width: 120px; height: 110px; opacity: 0.95; filter: drop-shadow(0 8px 18px rgba(0,0,0,0.2)); }
+    .ball { right: -24px; top: -24px; width: 120px; height: 120px; opacity: 0.22; transform: rotate(-12deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12)); }
+    .home-plate { left: 50%; transform: translateX(-50%); bottom: 12px; width: 120px; height: 110px; opacity: 0.95; filter: drop-shadow(0 8px 18px rgba(0,0,0,0.08)); }
 
     section { margin-top: 34px; }
     h2 { font-size: clamp(20px, 3.2vw, 26px); margin: 0 0 14px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
-    h2 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(255,183,3,0.25); }
+    h2 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px rgba(194,65,12,0.15); }
 
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
 
     .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
     .proj { display: grid; gap: 10px; }
     .proj h3 { margin: 0; font-size: 18px; display: flex; align-items: center; gap: 10px; color: var(--ink); }
-    .icon { width: 28px; height: 28px; border-radius: 8px; display: inline-grid; place-items: center; background: linear-gradient(135deg, #203247, #1a2a3d); color: var(--accent); border: 1px solid #22344a; }
-
+    .icon { width: 28px; height: 28px; border-radius: 8px; display: inline-grid; place-items: center; background: linear-gradient(135deg, #ffe7df, #fff2eb); color: var(--accent); border: 1px solid var(--border); }
     .chips { display: flex; gap: 8px; flex-wrap: wrap; }
     .chip {
       display: inline-flex; align-items: center; gap: 6px;
-      background: linear-gradient(135deg, #1d2a3a, #152238);
-      color: #e6edf3;
-      border: 1px solid #2b3b52;
+      background: linear-gradient(135deg, #f7f1e3, #fffaf0);
+      color: #5a5b50; border: 1px solid var(--border);
       padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700;
     }
     .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 0 2px rgba(180,35,24,0.15); }
-
     .proj-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 2px; }
-    .icon-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border); background: #ffffff14; color: var(--ink); text-decoration: none; backdrop-filter: saturate(1.2) blur(2px); }
-    .icon-btn:hover { background: #ffffff24; text-decoration: none; }
-    .status { margin-left: auto; font-size: 12px; font-weight: 800; color: #0b1620; background: var(--accent); border-radius: 8px; padding: 3px 8px; }
+    .icon-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border); background: #fff7; color: var(--ink); text-decoration: none; backdrop-filter: saturate(1.2) blur(2px); }
+    .icon-btn:hover { background: #fff; text-decoration: none; }
+    .status { margin-left: auto; font-size: 12px; font-weight: 800; color: #fff; background: var(--accent); border-radius: 8px; padding: 3px 8px; }
 
     .contact p { margin-top: 4px; }
     .links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 
     footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 14px; }
 
-    .skip-link { position: absolute; left: -999px; top: 0; background: var(--accent); color: #0b1620; padding: 8px 10px; border-radius: 10px; }
+    .skip-link { position: absolute; left: -999px; top: 0; background: var(--accent); color: #fff; padding: 8px 10px; border-radius: 10px; }
     .skip-link:focus { left: 10px; z-index: 999; }
 
     @media (max-width: 560px) {
-      .stadium { display: none; }  /* keep text area clean on mobile */
+      .stadium { display: none; }
       .ball { display: none; }
       .hero { padding-bottom: 160px; }
       .home-plate { bottom: 16px; width: 96px; height: 88px; }
@@ -147,15 +182,13 @@
 
     <main id="main">
       <section class="hero" aria-label="Intro">
-        <!-- Stadium arcs placed low; omitted on mobile via CSS -->
         <svg class="stadium" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
           <path d="M0,280 Q600,240 1200,280 L1200,315 L0,315 Z" fill="var(--wall)"></path>
           <path d="M0,315 L1200,315 L1200,335 L0,335 Z" fill="var(--clay)" opacity="0.95"></path>
         </svg>
 
-        <!-- Baseball watermark -->
         <svg class="ball" viewBox="0 0 100 100" aria-hidden="true">
-          <circle cx="50" cy="50" r="40" fill="#fdfdf8" stroke="#b9bfc6" stroke-width="1.2"></circle>
+          <circle cx="50" cy="50" r="40" fill="#fdfdf8" stroke="#d2d2d2" stroke-width="1.2"></circle>
           <path d="M18,30 C38,45 38,55 18,70" fill="none" stroke="var(--accent-2)" stroke-width="2"></path>
           <path d="M82,30 C62,45 62,55 82,70" fill="none" stroke="var(--accent-2)" stroke-width="2"></path>
           <g stroke="var(--accent-2)" stroke-width="2">
@@ -187,23 +220,78 @@
       <section id="projects" aria-label="Projects">
         <h2><span class="dot" aria-hidden="true"></span> Projects</h2>
         <div class="grid">
+          <!-- Pitch Tunneling Analyzer — now Live with Docs button -->
           <article class="card proj">
-            <h3><span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"></circle><path d="M5 7c3 2 3 8 0 10M19 7c-3 2-3 8 0 10"></path></svg></span> Pitch Tunneling Analyzer <span class="status">WIP</span></h3>
-            <p class="muted">Quantifies RP and SD across back‑to‑back pitches; relates TunnelScore to CSW/Whiff/Chase.</p>
-            <div class="chips"><span class="chip"><span class="dot"></span> Python</span><span class="chip"><span class="dot"></span> Pandas</span><span class="chip"><span class="dot"></span> Statcast</span><span class="chip"><span class="dot"></span> Visualization</span></div>
-            <div class="proj-actions"><a class="icon-btn" href="https://github.com/jonasdixon/pitch-tunneling-analyzer" target="_blank" rel="noopener noreferrer">Repo</a><a class="icon-btn" href="https://github.com/jonasdixon" target="_blank" rel="noopener noreferrer">Author</a></div>
+            <h3>
+              <span class="icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M5 7c3 2 3 8 0 10M19 7c-3 2-3 8 0 10"></path>
+                </svg>
+              </span>
+              Pitch Tunneling Analyzer
+            </h3>
+            <p class="muted">Quantifies release proximity (RP) and late movement/location separation (SD) across back‑to‑back pitches; relates TunnelScore to CSW/Whiff/Chase.</p>
+            <div class="chips">
+              <span class="chip"><span class="dot"></span> Python</span>
+              <span class="chip"><span class="dot"></span> Pandas</span>
+              <span class="chip"><span class="dot"></span> Statcast</span>
+              <span class="chip"><span class="dot"></span> Visualization</span>
+            </div>
+            <div class="proj-actions">
+              <a class="icon-btn" href="https://github.com/jonasdixon/pitch-tunneling-analyzer#quickstart" target="_blank" rel="noopener noreferrer" aria-label="Documentation">Docs</a>
+              <a class="icon-btn" href="https://github.com/jonasdixon/pitch-tunneling-analyzer" target="_blank" rel="noopener noreferrer" aria-label="Open repository">Repo</a>
+              <a class="icon-btn" href="https://github.com/jonasdixon" target="_blank" rel="noopener noreferrer" aria-label="Author profile">Author</a>
+            </div>
           </article>
+
+          <!-- Shadow Zone Framing Model -->
           <article class="card proj">
-            <h3><span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="3" width="12" height="6" rx="2"></rect><rect x="4" y="9" width="16" height="8" rx="2"></rect><path d="M7 17v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2"></path></svg></span> Shadow Zone Framing Model <span class="status">WIP</span></h3>
-            <p class="muted">Called strike probability at the edges; catcher and umpire effects to runs.</p>
-            <div class="chips"><span class="chip"><span class="dot"></span> Logistic/GAM</span><span class="chip"><span class="dot"></span> Calibration</span><span class="chip"><span class="dot"></span> Explainability</span></div>
-            <div class="proj-actions"><a class="icon-btn" href="https://github.com/jonasdixon/shadow-framing-model" target="_blank" rel="noopener noreferrer">Repo</a><a class="icon-btn" href="https://github.com/jonasdixon" target="_blank" rel="noopener noreferrer">Author</a></div>
+            <h3>
+              <span class="icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="6" y="3" width="12" height="6" rx="2"></rect>
+                  <rect x="4" y="9" width="16" height="8" rx="2"></rect>
+                  <path d="M7 17v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2"></path>
+                </svg>
+              </span>
+              Shadow Zone Framing Model
+              <span class="status" title="Work in progress">WIP</span>
+            </h3>
+            <p class="muted">Called strike probability at the edges; extracts catcher and umpire effects, calibrated and convertible to runs.</p>
+            <div class="chips">
+              <span class="chip"><span class="dot"></span> Logistic/GAM</span>
+              <span class="chip"><span class="dot"></span> Calibration</span>
+              <span class="chip"><span class="dot"></span> Explainability</span>
+            </div>
+            <div class="proj-actions">
+              <a class="icon-btn" href="https://github.com/jonasdixon/shadow-framing-model" target="_blank" rel="noopener noreferrer" aria-label="Open repository">Repo</a>
+              <a class="icon-btn" href="https://github.com/jonasdixon" target="_blank" rel="noopener noreferrer" aria-label="Author profile">Author</a>
+            </div>
           </article>
+
+          <!-- Sweeper Finder -->
           <article class="card proj">
-            <h3><span class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12c6-6 12 6 18 0" stroke-linecap="round"></path><path d="M9 10c1.5 1 4.5 3 6 4" stroke-linecap="round"></path></svg></span> Sweeper Finder <span class="status">WIP</span></h3>
-            <p class="muted">Finds “sweeper” sliders from movement/velocity; flags under‑utilization; summarizes outcomes.</p>
-            <div class="chips"><span class="chip"><span class="dot"></span> GMM/Clustering</span><span class="chip"><span class="dot"></span> Movement</span><span class="chip"><span class="dot"></span> CSW/xwOBAcon</span></div>
-            <div class="proj-actions"><a class="icon-btn" href="https://github.com/jonasdixon/sweeper-finder" target="_blank" rel="noopener noreferrer">Repo</a><a class="icon-btn" href="https://github.com/jonasdixon" target="_blank" rel="noopener noreferrer">Author</a></div>
+            <h3>
+              <span class="icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M3 12c6-6 12 6 18 0" stroke-linecap="round"></path>
+                  <path d="M9 10c1.5 1 4.5 3 6 4" stroke-linecap="round"></path>
+                </svg>
+              </span>
+              Sweeper Finder
+              <span class="status" title="Work in progress">WIP</span>
+            </h3>
+            <p class="muted">Finds “sweeper” sliders from movement/velocity profiles, flags under‑utilization, and summarizes outcomes.</p>
+            <div class="chips">
+              <span class="chip"><span class="dot"></span> GMM/Clustering</span>
+              <span class="chip"><span class="dot"></span> Movement</span>
+              <span class="chip"><span class="dot"></span> CSW/xwOBAcon</span>
+            </div>
+            <div class="proj-actions">
+              <a class="icon-btn" href="https://github.com/jonasdixon/sweeper-finder" target="_blank" rel="noopener noreferrer" aria-label="Open repository">Repo</a>
+              <a class="icon-btn" href="https://github.com/jonasdixon" target="_blank" rel="noopener noreferrer" aria-label="Author profile">Author</a>
+            </div>
           </article>
         </div>
       </section>
@@ -232,8 +320,7 @@
       const root = document.documentElement;
       const key = "site-theme";
       const saved = localStorage.getItem(key);
-      if (saved === "day") root.setAttribute("data-theme", "");
-      else root.setAttribute("data-theme", "night");
+      if (saved === "night") root.setAttribute("data-theme", "night");
       document.getElementById("themeToggle").addEventListener("click", function () {
         const night = root.getAttribute("data-theme") === "night";
         root.setAttribute("data-theme", night ? "" : "night");
@@ -244,7 +331,7 @@
   </script>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Jonas Dixon","url":"https://jonasdixon.github.io/night.html","sameAs":["https://github.com/jonasdixon","https://www.linkedin.com/in/jonas-dixon-9ab181220/"],"jobTitle":"Baseball analytics and data/ML"}
+  {"@context":"https://schema.org","@type":"Person","name":"Jonas Dixon","url":"https://jonasdixon.github.io/","sameAs":["https://github.com/jonasdixon","https://www.linkedin.com/in/jonas-dixon-9ab181220/"],"jobTitle":"Baseball analytics and data/ML"}
   </script>
 </body>
 </html>
