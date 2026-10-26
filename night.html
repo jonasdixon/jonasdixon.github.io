@@ -257,11 +257,12 @@
               </span>
               Shadow Zone Framing Model
             </h3>
-            <p class="muted">Called strike probability at the edges; extracts catcher and umpire effects, calibrated and convertible to runs.</p>
+            <p class="muted">A penalized logistic model of called-strike probability on 741,144 taken pitches, fit on 2023 and scored on 2024. It separates the catcher’s effect from the umpire’s at the edge of the zone, checks that the predicted probabilities are honest, and converts both to runs.</p>
             <div class="chips">
-              <span class="chip"><span class="dot"></span> Logistic/GAM</span>
+              <span class="chip"><span class="dot"></span> Penalized logistic</span>
+              <span class="chip"><span class="dot"></span> Shrunk random effects</span>
               <span class="chip"><span class="dot"></span> Calibration</span>
-              <span class="chip"><span class="dot"></span> Explainability</span>
+              <span class="chip"><span class="dot"></span> Runs</span>
             </div>
             <div class="proj-actions">
               <a class="icon-btn" href="https://github.com/jonasdixon/shadow-framing-model#what-it-found" target="_blank" rel="noopener noreferrer" aria-label="Documentation">Docs</a>
@@ -281,11 +282,12 @@
               </span>
               Sweeper Finder
             </h3>
-            <p class="muted">Finds “sweeper” sliders from movement/velocity profiles, flags under‑utilization, and summarizes outcomes.</p>
+            <p class="muted">An unsupervised Gaussian mixture on movement and velocity that separates sweepers from ordinary sliders without using the league’s label. Each pitcher is then compared against his own arsenal, which shows the edge is mostly a breaking-ball effect rather than a sweeper-shape one, and pitchers who throw a good one too rarely are flagged for review.</p>
             <div class="chips">
-              <span class="chip"><span class="dot"></span> GMM/Clustering</span>
+              <span class="chip"><span class="dot"></span> Gaussian mixture</span>
               <span class="chip"><span class="dot"></span> Movement</span>
-              <span class="chip"><span class="dot"></span> CSW/xwOBAcon</span>
+              <span class="chip"><span class="dot"></span> Within-pitcher contrasts</span>
+              <span class="chip"><span class="dot"></span> Run value</span>
             </div>
             <div class="proj-actions">
               <a class="icon-btn" href="https://github.com/jonasdixon/sweeper-finder#what-it-found" target="_blank" rel="noopener noreferrer" aria-label="Documentation">Docs</a>
